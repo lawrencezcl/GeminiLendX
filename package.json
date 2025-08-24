@@ -1,0 +1,50 @@
+{
+  "name": "gemini-lend-x",
+  "version": "1.0.0",
+  "description": "Cross-Chain Lending Platform with AI-Powered Assistance",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "node backend/server.js",
+    "start": "node backend/server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "build": "webpack --mode production",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "defi",
+    "cross-chain",
+    "lending",
+    "zetchain",
+    "gemini-ai",
+    "decentralized-finance"
+  ],
+  "author": "GeminiLend X Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "web3": "^1.10.0",
+    "zeta-sdk": "^1.0.0",
+    "axios": "^1.4.0",
+    "@zeta-chain/toolkit": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0",
+    "eslint": "^8.45.0",
+    "prettier": "^3.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "backend/**/*.js",
+      "!backend/server.js"
+    ],
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  }
+}
